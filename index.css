@@ -1,0 +1,337 @@
+*{
+        margin: 0;
+        padding: 0;
+}
+body{
+background-image: url(bg2.jpg);
+background-repeat: no-repeat;   
+background-size:cover ;
+}
+/* scroll bar */
+html{
+        scrollbar-width: normal;
+        scrollbar-color:rgb(90,79,77) red ;
+
+}
+html::-webkit-scrollbar{
+        width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: red;
+border-radius: 6vh;}
+html::-webkit-scrollbar-track{
+        background-color:rgb(90,79,77);
+}
+.logo img{
+        display: block;
+        margin: auto;
+        width: 10vw;
+        /* height: 20vh; */
+}
+.navbar{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        background-color: rgb(90,79,77);
+        width: 60vw;
+        height: 6vh;
+        margin-left: 20vw;
+        margin-bottom: 5vh;
+        /* margin-right: 5vw; */
+       
+}
+.navbar ul{
+       display: flex;
+       list-style: none;
+        
+
+}
+.navbar ul li a{
+        color: aliceblue;
+        font-size: 1.3em;
+        text-decoration: none;
+        margin-left: 4vw;
+        /* padding: 4px; */
+        
+
+        
+}
+.navbar ul li a:hover
+{
+        color: aliceblue;
+        background-color: rgb(210,38,38);
+        padding:2rem .2rem 2rem .2rem ;
+        font-size: 1.3em;
+        text-decoration: none;
+        margin-left: 4vw;   
+}
+
+
+
+
+/* slider */
+ .slider img{
+        width: 55rem;
+        height: 35rem;
+} 
+.slider{
+        
+        display: block;
+        margin: auto;
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 55rem;
+        height: 35rem;
+        
+        /* background-color: blueviolet; */
+        border:1.7rem solid white;
+}
+
+
+
+
+/* menu */
+
+#menuhead{
+
+        display:flex;
+        margin: auto;
+        justify-content: center;
+        font-size: 4rem;
+        color:white ;
+        
+}
+.menu{
+
+        
+        display: flex;
+        margin: auto;
+        height: 20rem;
+        width: 60rem;
+        padding: 4rem;
+}
+/* breakfast */
+.breakfast{
+        display:flex;
+        flex-direction: column;
+        width: 15rem;
+        border: .8rem solid white;
+        padding: .5rem;
+       margin-right: 2rem;
+       
+
+}
+.menu .breakfast img{
+        
+        width: 15rem;
+}
+.breakfast #breakbtn{
+        color: aliceblue;
+        border: 2px solid white;
+        background-color: rgb(210,38,38);
+        width: 100%;
+        height: 2rem;
+        margin-top: 1.3rem;
+        font-size: 1em;
+}
+/* hover */
+.breakfast #breakbtn:hover{
+        color: red;
+        background-color:white;
+        border: 2px solid rgb(210,38,38);
+        width: 100%;
+        height: 2rem;
+        margin-top: 1.3rem;
+        font-size: 1em;
+}
+/* Lunch */
+.lunch{
+        display:flex;
+        flex-direction: column;
+        width: 15rem;
+        border: .8rem solid white;
+        padding: .5rem;
+       margin-right: 2rem;
+
+
+}
+.menu .Lunch img{
+        
+        width: 15rem;
+}
+.lunch #lunchbtn{
+        color: aliceblue;
+        background-color: rgb(210,38,38);
+        width: 100%;
+        height: 2rem;
+        margin-top: 2rem;
+        font-size: 1em;
+        border: 2px solid white;
+       
+}
+/* hover */
+.lunch #lunchbtn:hover{
+        color: red;
+        background-color:white;
+        border: 2px solid rgb(210,38,38);
+        width: 100%;
+        height: 2rem;
+        /* margin-top: 1.3rem; */
+        /* font-size: 1em; */
+}
+/* Dinner */
+.dinner{
+        display:flex;
+        flex-direction: column;
+        width: 15rem;
+        border: .8rem solid white;
+        padding: .5rem;
+        margin-right: 2rem;
+
+}
+.menu .dinner img{
+        
+        width: 15rem;
+}
+.dinner #dinnerbtn{
+        color: aliceblue;
+        background-color: rgb(210,38,38);
+        height: 2rem;
+       margin-top: 1.6rem;
+        width: 100%;
+        font-size: 1em;
+        border: 2px solid white;
+
+}
+/* hover */
+.dinner #dinnerbtn:hover{
+        color: red;
+        background-color:white;
+        border: 2px solid rgb(210,38,38);
+        width: 100%;
+        height: 2rem;
+        /* margin-top: 1.3rem;
+        font-size: 1em;*/
+} 
+
+/* FEATURED PRODUCTS */
+#pro{
+        display:flex;
+        margin: auto;
+        justify-content: center;
+        font-size: 4rem;
+        color:rgb(210,38,38) ;
+}
+
+.product{
+        /* background-color: aquamarine; */
+        display: flex;
+        margin: auto;
+        height: 45rem;
+        width: 60rem;
+        padding: 1rem;
+}
+
+.item{
+        display:flex;
+        flex-direction: column;
+        width: 12rem;
+         border:  solid whitesmoke; 
+        padding: .5rem;
+       margin-right: 2rem;
+}
+.item img{
+        width: 12rem;
+        
+}
+.item h3{
+        color:rgb(210,38,38) ;
+        font-size: 2rem;
+}
+.item p{
+        font-size: 1.3rem;
+        
+}
+.item h2{
+        color: rgb(210,38,38);
+        font-size: 2rem;
+}
+.item .btn{
+        margin: auto;
+       
+        width: 10rem;
+        height: 3rem;
+        color: white;
+        background-color:rgb(90,79,77);
+        font-size: 1.3rem;
+        border: 2px solid white;
+}
+
+.item .btn:hover{
+        margin: auto;
+        width: 10rem;
+        height: 3rem;
+        color: white;
+        background-color:rgb(210,38,38);
+        font-size: 1.3rem;
+}
+
+/* fOOTER */
+#social{
+        display:flex;
+        margin: auto;
+        justify-content: center;
+        font-size: 4rem;
+        color:rgb(210,38,38) ;
+}
+footer{
+        height: 30rem;
+}
+.social_area{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.social_area ul{
+        display: flex;
+        list-style: none;
+        font-size: 5rem;
+}
+
+.social_area ul li a{
+        margin: 3rem;
+        color:rgb(210,38,38) ;
+}
+.social_area ul li a #fb:hover{
+        color: blue;
+}
+.social_area ul li a #twitter:hover{
+        color: rgb(111, 201, 236);
+}
+.social_area ul li a #youtube:hover{
+        color: red;
+}
+.social_area ul li a #insta:hover{
+        color:deeppink;
+}
+.social_area ul li a #spotify:hover{
+        color: darkblue;
+}
+
+
+/* address */
+#address{
+        display:flex;
+        margin: auto;
+        justify-content: center;
+        font-size: 4rem;
+        color:rgb(210,38,38) ;
+}
+
+
+
+
+
+
+

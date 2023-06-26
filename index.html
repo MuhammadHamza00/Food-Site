@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tasty Rasto</title>
+        <link rel="stylesheet" href="index.css">
+       
+</head>
+
+<body>
+        <div class="logo"><img src="logo chick.png" alt="Logo"></div> <br>
+        <div class="navbar">
+                <ul>
+                        <li class="items"id="home"><a href="#">Home</a></li>
+                        <li class="items"id="about"><a href="#">About</a></li>
+                        <li class="items"id="menu"><a href="#">Menu</a>
+                        <li>
+                       
+                        <!-- <li class="items"><a href="#">Price</a></li> -->
+                        <li class="items"id="order"><a href="#">Order</a></li>
+
+                </ul>
+        </div>
+        <div class="slider">
+                <img src="main.jpg" alt="slider">
+        </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h1 id="menuhead">Hurry Deals!</h1>
+        <div class="menu">
+                <div class="breakfast">
+                        <img src="p2.jpg" alt="breakfast">
+                        <br><br>
+                        <h4>Delicious Breakfast is awaiting you!</h4>
+                        <input type="button" value="Order Now" id="breakbtn">
+                </div>
+                <div class="lunch">
+                        <img src="p1.jpg" alt="Lunch">
+                        <br>
+                        <h4>Are You Too Hungry!Press Button To Order</h4>
+                        <input type="button" value="Order Now" id="lunchbtn">
+                </div>
+                <div class="dinner">
+                        <img src="p3.jpg" alt="Dinner">
+                        <br>
+                        <h4>Press Button To Kill The Dancing Rats</h4>
+                        <input type="button" value="Order Now" id="dinnerbtn">
+                </div>
+        </div>
+        <hr>
+        <!-- Featured products -->
+        <h1 id="pro">Featured Products</h1>
+        <div class="product">
+                <div class="pro1 item">
+                        <img src="o1.jpg" alt="item1"><br><br>
+                        <h3>PARATHA ROLL</h3><br><br>
+                        <P>This is our spicy paratha roll.Its is originally a <b>Asian Dish</b>.Its so delicious and
+                                spicy.You should taste it,it will be the best decision you ever make in your life. </P>
+                        <br>
+                        <h2>Price <br>$20 Only</h2>
+                        <br>
+                        <input type="button" value="Order Now" class="btn" id="btn1">
+
+                </div>
+                <div class="pro2 item">
+                        <img src="o2.jpg" alt=""><br><br>
+                        <h3>ROYAL BREADS</h3><br><br>
+                        <p>Royal Breads are the trademark of our bakery.People like them very much and they are part of
+                                dinning table <b>since 1950</b></p><br><br>
+                        <h2>Price <br>$50 Only</h2><br>
+                        <input type="button" value="Order Now" class="btn" id="btn2">
+                </div>
+                <div class="pro3 item">
+                        <img src="pp7.jpg" alt=""><br><br>
+                        <h3>CHOCO CUP CAKES</h3><br><br>
+                        <p><b>CHOCOLATE CUP CAKES</b> are best choice of every child of our city.They are healthy and
+                                baked especially for childern.</p><br><br><br><br>
+                        <h2>Price <br>$5 Only</h2>
+                        <br>
+                        <input type="button" value="Order Now" class="btn" id="btn3">
+                </div>
+                <div class="pro4 item">
+                        <img src="pp8.jpg" alt=""><br><br>
+                        <h3>BIRTHDAY CAKES</h3><br><br>
+                        <p>Our BIRTHDAY CAKES are part of every every <b>birthday party</b> held in city because of
+                                their healthy ingredients and their taste as well as for their variety. </p><br>
+                        <h2>Price <br>$30 Only</h2><br>
+                        <input type="button" value="Order Now" class="btn" id="btn4">
+                </div>
+
+        </div>
+        <hr>
+        <footer>
+                <h1 id="social">Contact Us</h1>
+                <div class="social_area">
+                        <ul>
+                                <li><a href=""><i class="fab fa-facebook" id="fb"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter" id="twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-youtube" id="youtube"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram" id="insta"></i></a></li>
+                                <li><a href=""><i class="fab fa-spotify" id="spotify"></i></a></li>
+                        </ul>
+                        <hr>
+                        <br><br>
+
+                </div>
+                <br>
+                <h2 id="address">www.TastyClub.com</h2>
+        </footer>
+</body>
+<script>
+        // about
+let about_btn=document.getElementById("about");
+about_btn.addEventListener("click",(e)=>{
+        let openBtn=window.open("about.html","Main Window","scrollbar=yes")
+})
+
+// menu
+let menu_btn=document.getElementById("menu");
+menu_btn.addEventListener("click",(e)=>{
+        let openBtn=window.open("menu.html","Main Window","scrollbar=yes")
+})
+// order
+let order_btn=document.getElementById("order");
+order_btn.addEventListener("click",(e)=>{
+        let openBtn=window.open("order.html","Main Window","scrollbar=yes")
+})
+</script>
+</html>

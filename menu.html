@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <style>
+        /* scroll bar */
+        html {
+            scrollbar-width: normal;
+            scrollbar-color: rgb(90, 79, 77) red;
+
+        }
+
+        html::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background-color: red;
+            border-radius: 6vh;
+        }
+
+        html::-webkit-scrollbar-track {
+            background-color: rgb(90, 79, 77);
+        }
+
+        #menu {
+            color: rgb(210, 38, 38);
+            font-size: 5.5vh;
+            background-color: rgb(229, 229, 229, 1);
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h3 {
+            background-color: rgb(210, 38, 38);
+            font-size: 5.5vh;
+            color: rgb(229, 229, 229, 1);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pizza {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+        }
+
+        .p-items {
+            border: 2px solid rgb(210, 38, 38);
+        }
+
+        .image {
+            width: 30vw;
+            height: 17rem;
+        }
+
+        .p-items {
+            margin: 1vw;
+            height: 50vh;
+            background-color: rgb(229, 229, 229, 1);
+        }
+
+        h4 {
+            color: rgb(210, 38, 38);
+            font-size: 4vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .order-btn {
+            border: 2px solid #bd0707;
+            align-items: center;
+            margin: auto;
+
+            width: 20rem;
+            height: 2rem;
+            color: white;
+            background-color: #d22626;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .order-btn:hover {
+            border: 2px solid #d22626;
+
+            color: #d22626;
+            background-color: white;
+
+
+        }
+
+        /* fOOTER */
+        #social {
+            background-color: rgb(229, 229, 229);
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            display: flex;
+            
+           
+
+            font-size: 4rem;
+            color: rgb(210, 38, 38);
+        }
+
+        footer {
+        
+            height: 30rem;
+            width: 100%;
+        }
+
+        .social_area {
+           
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social_area ul {
+            display: flex;
+            list-style: none;
+            font-size: 5rem;
+            flex-wrap: wrap;
+            
+            margin: auto;
+        }
+
+        .social_area ul li a {
+            margin: 4rem;
+            color: rgb(210, 38, 38);
+        }
+
+        .social_area ul li a #fb:hover {
+            color: blue;
+        }
+
+        .social_area ul li a #twitter:hover {
+            color: rgb(111, 201, 236);
+        }
+
+        .social_area ul li a #youtube:hover {
+            color: red;
+        }
+
+        .social_area ul li a #insta:hover {
+            color: deeppink;
+        }
+
+        .social_area ul li a #spotify:hover {
+            color: rgb(113, 240, 113);
+        }
+
+        /* address */
+        #address {
+            
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            font-size: 4rem;
+            color: rgb(210, 38, 38);
+        }
+
+        #back {
+            color: white;
+            background-color: #d22626;
+            font-size: 1rem;
+            border: 2px solid whitesmoke;
+            width: 5rem;
+            height: 2rem;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        #back:hover {
+            color: #d22626;
+            background-color: whitesmoke;
+            font-size: 1rem;
+            border: 1px solid #d22626;
+        }
+
+    </style>
+    <button id="back">Go Back</button>
+
+    <h1 id="menu">Our Menu</h1>
+    <br>
+    <h3>Fast Foods</h3>
+    <div class="pizza">
+        <div class="p-items">
+            <img src="pizzapic.jfif" alt="roll" class="image">
+            <h4>Pizza</h4>
+            <button class="order-btn">Order</button>
+        </div>
+        <div class="p-items">
+            <img src="burger.jfif" alt="roll" class="image">
+            <h4>Burger</h4>
+            <button class="order-btn">Order</button>
+        </div>
+        <div class="p-items">
+            <img src="sandwich.jfif" alt="roll" class="image">
+            <h4>Sandwich</h4>
+            <button class="order-btn">Order</button>
+        </div>
+
+    </div>
+    <h3>Drinks</h3>
+    <div class="pizza">
+        <div class="p-items">
+            <img src="tea.jfif" alt="roll" class="image">
+            <h4>Tea</h4>
+            <button class="order-btn">Order</button>
+        </div>
+        <div class="p-items">
+            <img src="drinks.jfif" alt="roll" class="image">
+            <h4>Cold Drinks</h4>
+            <button class="order-btn">Order</button>
+        </div>
+        <div class="p-items">
+            <img src="juice.jfif" alt="roll" class="image">
+            <h4>Fresh Juice</h4>
+            <button class="order-btn">Order</button>
+        </div>
+
+    </div>
+    <h3>Bakery</h3>
+    <div class="pizza">
+        <div class="p-items">
+            <img src="o1.jpg" alt="roll" class="image">
+            <h4>Rolls</h4>
+            <button class="order-btn">Order</button>
+        </div>
+        <div class="p-items">
+            <img src="cakes.jfif" alt="roll" class="image">
+            <h4>Cakes</h4>
+            <button class="order-btn">Order</button>
+        </div>
+        <div class="p-items">
+            <img src="sweet.jfif" alt="roll" class="image">
+            <h4>Sweets</h4>
+            <button class="order-btn">Order</button>
+        </div>
+
+    </div>
+    <h3>Meat</h3>
+    <div class="pizza">
+        <div class="p-items">
+            <img src="chicken.jfif" alt="roll" class="image">
+            <h4>Chicken</h4>
+            <button class="order-btn">Order</button>
+        </div>
+        <div class="p-items">
+            <img src="mutton.jfif" alt="roll" class="image">
+            <h4>Mutton</h4>
+            <button class="order-btn">Order</button>
+        </div>
+        <div class="p-items">
+            <img src="roast.jfif" alt="roll" class="image">
+            <h4>Roast</h4>
+            <button class="order-btn">Order</button>
+        </div>
+
+        <footer>
+            <h1 id="social">Contact Us</h1>
+            <div class="social_area">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook" id="fb"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter" id="twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube" id="youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram" id="insta"></i></a></li>
+                    <li><a href=""><i class="fab fa-spotify" id="spotify"></i></a></li>
+                </ul>
+                <hr>
+                <br><br>
+
+            </div>
+            <br>
+            <h2 id="address">www.TastyClub.com</h2>
+        </footer>
+
+</body>
+<script>
+      let closeBtn=document.getElementById("back");
+        closeBtn.addEventListener("click",(e)=>{
+                let closeWin=window.close("/menu.html","Main Window","scrollbar=no")
+        })
+</script>
+</html>

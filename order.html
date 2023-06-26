@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        body{
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right,whitesmoke,#d22626);
+
+        }
+        .complete{
+            display: flex;
+            flex-direction: row;
+            border: 4px solid whitesmoke;
+            width: 70%;
+            margin:10% 5% 5% 15%;
+        }
+        .image{
+         width: 45%;
+         
+        }
+        img{
+          width:50vh ;
+          height: 100%;
+         
+          
+          
+        }
+         .form{
+           display: grid;
+            flex-direction: row;
+            width: 55%;
+            background:linear-gradient(to left,#f1efef,rgb(229 229 229));
+            justify-content: center;
+            align-content: center;
+            color:#d22626;
+            
+         }
+         h3{
+           font-size: 1.9vw;
+         }
+         .form input{
+            height: 2vh;
+            font-size: 1.4vw;
+            border: 1px solid red;
+            padding: 5px;
+            color: red;
+         }
+         button{
+        color: white;
+        background-color:#d22626;
+        font-size: 1.3rem;
+        border: 2px solid whitesmoke;
+        width: 15rem;
+        height: 2rem;
+         }
+         button:hover{
+            
+        
+        color: #d22626;
+        background-color:whitesmoke;
+        font-size: 1.3rem;
+        border: 1px solid #d22626;
+}
+         #back{
+        color: white;
+        background-color:#d22626;
+        font-size: 1rem;
+        border: 2px solid whitesmoke;
+        width: 5rem;
+        height: 2rem;
+        margin-top: 10px;
+        margin-left: 10px;
+         }
+         #back:hover{
+            color: #d22626;
+            background-color:whitesmoke;
+            font-size: 1rem;
+            border: 1px solid #d22626;
+    }
+    </style>
+</head>
+<body>
+    <button id="back">Go Back</button>
+<div class="complete">
+    <div class="image"><img src="whit.jpg" alt=""></div>
+    <div class="form">
+        <h3>Username</h3>
+       <input type="text" name="username" id="username"placeholder="Enter Name">
+       <h3>Email</h3>
+     <input type="email" name="Email" id="email"placeholder="Enter Email">
+      <h3>Address</h3>
+     <input type="text" name="address" id="address"placeholder="Enter Address">
+     <h3>Orders</h3>
+     <input type="text"placeholder="Place Your Order">
+     <br><br>
+     <button type="submit"id="submitOrder">Submit</button>
+     <br>
+    </div>
+</div>
+<script>
+     let closeBtn=document.getElementById("back");
+        closeBtn.addEventListener("click",(e)=>{
+                let closeWin=window.close("/order.html","Main Window","scrollbar=no")
+        })
+   let openThanks=document.getElementById("submitOrder");
+   openThanks.addEventListener("click",(e)=>{
+       let openWinThanks=window.open("thanks.html","main window","scrollbar=no");
+   })
+</script>
+</body>
+</html>
